@@ -8,7 +8,10 @@ INPUT_DIR="data/20230312"
 OUTPUT_DIR=${INPUT_DIR}
 
 python main.py \
-    --input-dir ${INPUT_DIR}
-    # --output-dir ${OUTPUT_DIR}
+    --input-dir ${INPUT_DIR} \
+    --output-dir ${OUTPUT_DIR} \
+    --output-file-name "animation" \
+    --video-width 720 \
+    --interval 0.5
 
 popd > /dev/null
