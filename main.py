@@ -114,7 +114,7 @@ class Img2VideoConverter():
     def convert_video_for_X(self):
         video_clip = VideoFileClip(self.output_video_tmp_path)
         print(f"[INFO] converting video for X")
-        video_clip.write_videofile(self.output_video_path, codec='libx264', logger=None)
+        video_clip.write_videofile(self.output_video_path, codec='libx264')
 
         cmd = ["rm", self.output_video_tmp_path]
         subprocess.run(cmd)
